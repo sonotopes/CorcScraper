@@ -1,0 +1,89 @@
+{
+      "URL": "https://www.corcoran.com/search/for-rent/location/new-york-ny-c900008/regionId/1?sortBy=listedDate%2Bdesc",
+      "body_node": {
+            "name": "listing_div",
+            "selector": "div[class*=\"ListingCard__ListingCardWrapper\"]",
+            "secondary_selector": null,
+            "text": false,
+            "required": true
+      },
+      "item": [
+            {
+                  "name": "address",
+                  "selector": "h2[class*=\"ListingCard__Street\"]",
+                  "secondary_selector": null,
+                  "text": true,
+                  "required": true
+            },
+            {
+                  "name": "location",
+                  "selector": "div[class*=\"ListingCard__Location\"]",
+                  "secondary_selector": null,
+                  "text": true,
+                  "required": true
+            },
+            {
+                  "name": "type",
+                  "selector": "li[class*=\"ListingCardDetails__PropertyInfoSummary\"]",
+                  "secondary_selector": null,
+                  "text": true,
+                  "required": true
+            },
+            {
+                  "name": "price",
+                  "selector": "div[class*=\"ListingCard__PriceWrapper\"] > div",
+                  "secondary_selector": null,
+                  "text": true,
+                  "required": true
+            },
+            {
+                  "name": "listing_image",
+                  "selector": "div[class*=\"ListingCard__ImageContainer\"] > img",
+                  "secondary_selector": null,
+                  "text": false,
+                  "required": true
+            },
+            {
+                  "name": "beds",
+                  "selector": "li[data-testid*=\"beds\"]",
+                  "secondary_selector": null,
+                  "text": true,
+                  "required": false
+            },
+            {
+                  "name": "baths",
+                  "selector": "li[data-testid*=\"baths\"]",
+                  "secondary_selector": null,
+                  "text": true,
+                  "required": false
+            },
+            {
+                  "name": "half_baths",
+                  "selector": "li[data-e2e-id*=\"listing-card__property-info-half-baths\"]",
+                  "secondary_selector": null,
+                  "text": true,
+                  "required": false
+            },
+            {
+                  "name": "square_feet",
+                  "selector": "li[data-e2e-id*=\"listing-card__property-info-square-feet\"]",
+                  "secondary_selector": null,
+                  "text": true,
+                  "required": false
+            },
+            {
+                  "name": "brokerage",
+                  "selector": "div[class*=\"ListingCard__ListingAttributionText\"] > div > span",
+                  "secondary_selector": "div[class*=\"ListingCard__ListingAttribution\"] > div[class*=\"ListingCard__ListingAttributionText\"]",
+                  "text": true,
+                  "required": false
+            },
+            {
+                  "name": "attribution",
+                  "selector": "div[class*=\"ListingCard__ListingAttribution\"] > div[class*=\"ListingCard__ListingAttributionImageWrapper\"] > img",
+                  "secondary_selector": null,
+                  "text": false,
+                  "required": false
+            }
+      ]
+}
