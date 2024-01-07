@@ -16,7 +16,7 @@ Listings are scraped from [Corcoran](https://www.corcoran.com/search/for-rent/lo
 
 The scraper uses Playwright to handle javascript events (such as navigating to the next page). As such, to avoid cloudflare detection or other software, the program randomizes the intervals with which it will initiate a click. Once the html has been extracted, the raw data will be excavated using Selectolax. 
 
-The specific CSS selectors are defined in the config file. Once they have been located, the inner text content is parsed and processed into a CSV file. The data from the CSV file is standardized, and by the end of the program, a visual model is created (averge cost by neighborhood). 
+The specific CSS selectors are defined in the config file. Once they have been located, the inner text content is parsed and processed into CSV format. The data from the CSV file is standardized, and by the end of the program, a visual model is created (averge cost by neighborhood). 
 
 ## Important info 
 To run the scraper, simply put in the command: 
