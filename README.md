@@ -24,7 +24,7 @@ To begin, simply run the command:
 
 ```python3 main.py```
 
-(*Note: The program may take a few minutes to run.*)
+(*Note: The program may take a few minutes to extract the data.*)
 
 To change the number of listings processed, change 'Pages' in "tools.py".
 
