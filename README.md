@@ -23,6 +23,8 @@ To run the scraper, simply put in the command:
 
 ```python3 main.py```
 
+(*Note: The program may take a few minutes to run.*)
+
 To change the number of listings processed, change 'Pages' in "tools.py".
 
 'Pages' controls the number of webpages Playwright looks through. To look at fewer or more listings, simply change the value of 'Pages' to a number that is < 97 and atleast > 2. 
@@ -34,7 +36,9 @@ configurations = {
 ```
 ## Common Issues 
 
+```asyncio.exceptions.InvalidStateError: invalid state```
 
+This usually occurs because Playwright's request to the website times out. One reasons for this is that the number listed on 'Pages' exceeds the number on the website's navigation bar. If this isn't the case, then it's usually is an issue with the site itself. To fix this issue, the solution is to reduce the number listed for the 'Pages' attribute, or, try at a different time. 
 
 ## Disclaimer
 
