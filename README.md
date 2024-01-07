@@ -12,11 +12,11 @@ pip3 install -r requirements.txt
 
 ## Explication and Process
 
-Listings are scraped from [Corcoran](https://www.corcoran.com/search/for-rent/location/new-york-ny-c900008/regionId/1?sortBy=listedDate%2Bdesc). To limit the scope of the project, the range of potential listings is limited to the NYC tri-state area. As such, the sample data usually includes up to 10,000 listings. On averge (since listings are taken down intermittently) Corcoran will host about 5,000 or so listings. This number varies by season. 
+Listings are scraped from [Corcoran](https://www.corcoran.com/search/for-rent/location/new-york-ny-c900008/regionId/1?sortBy=listedDate%2Bdesc). To limit the scope of the project, the range of potential listings is limited to the NYC tri-state area. As such, the sample data usually includes up to 10,000 listings. On average (since listings are taken down intermittently) Corcoran will host about 5,000 or so listings. This number varies by season. 
 
 The scraper uses Playwright to handle javascript events (such as navigating to the next page). As such, to avoid cloudflare detection or other software, the program randomizes the intervals with which it will initiate a click. Once the html has been extracted, the raw data will be excavated using Selectolax. 
 
-The specific CSS selectors are defined in the config file. Once they have been located, the inner text content is parsed and processed into CSV format. The data from the CSV file is standardized, and by the end of the program, a visual model is created (of averge cost by neighborhood). 
+The specific CSS selectors are defined in the config file. Once they have been located, the inner text content is parsed and processed into CSV format. The data from the CSV file is standardized, and by the end of the program, a visual model is created (of average cost by neighborhood). 
 
 ## Important info 
 
