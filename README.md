@@ -39,7 +39,7 @@ configurations = {
 
 ```asyncio.exceptions.InvalidStateError: invalid state```
 
-This usually occurs because Playwright's request to the website times out. One reason for this is that the number listed on 'Pages' exceeds the number on the website's navigation bar. If this isn't the case, then it's usually is an issue with the site itself. To fix this issue, the solution is to reduce the number listed for the 'Pages' attribute, or, try at a different time. 
+This usually occurs because Playwright's request to the website times out. One reason for this is that the number listed on 'Pages' exceeds the number on the website's navigation bar. If this isn't the case, then it's usually is an issue with the site itself. To fix this issue, the solution is to input a smaller number for the 'Pages' attribute, or, try at a different time. 
 
 ## Disclaimer
 
