@@ -21,7 +21,7 @@ The specific CSS selectors are defined in the config file. Once they have been l
 ## Important info 
 To run the scraper, simply put in the command: 
 
-```python3 MAIN_SCRAPER.py```
+```python3 main.py```
 
 To change the number of listings processed, change 'Pages' in "tools.py".
 
