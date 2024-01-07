@@ -18,6 +18,8 @@ The scraper uses Playwright to handle javascript events (such as navigating to t
 
 The specific CSS selectors are defined in the config file. Once they have been located, the inner text content is parsed and processed into CSV format. The data from the CSV file is standardized, and by the end of the program, a visual model is created (of average cost by neighborhood). 
 
+![data](https://ibb.co/sjCbcnG)
+
 ## Important info 
 
 To begin, simply run the command: 
