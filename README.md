@@ -1,4 +1,4 @@
-<h1> Scrape Estate</h1>
+<h1> CorcScraper </h1>
 
 Web scraper that extracts real estate data/listings from the Corcoran website. 
 
