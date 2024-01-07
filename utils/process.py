@@ -4,6 +4,7 @@ from datetime import datetime
 import pandas as pd
 
 def regex(input_str: str, pattern:str, do_what: str = "findall"):
+    """Helper function for regex"""
     if do_what == "findall":
         return re.findall(pattern, input_str)
     else:
@@ -12,6 +13,7 @@ def regex(input_str: str, pattern:str, do_what: str = "findall"):
 
 
 def format_and_transform(attrs=dict):
+    """Organizes data into standardized format"""
     transforms = {
         "type": lambda raw: str(raw.upper()),
         "location": lambda raw: str(raw.upper()),
@@ -29,9 +31,11 @@ def format_and_transform(attrs=dict):
     return attrs
 
 def save_to_file(filename="extract", data:list[dict] = None):
+    """Saves data to csv file"""
     if data is None:
         raise ValueError("The function expects data as a list of dictionaries")
 
     df = pd.DataFrame(data)
     filename = f"{datetime.now().strftime('%Y_%m_%d')}_{filename}.csv"
     df.to_csv(filename, index=False)
+    return filename

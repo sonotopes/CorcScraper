@@ -1,6 +1,7 @@
 from selectolax.parser import Node
 
 def parse_raw_attributes(node: Node, selectors: list):
+    """Parses attributes according to config"""
     parsed_attrs = {}
 
     for node_attributes in selectors:
@@ -10,6 +11,7 @@ def parse_raw_attributes(node: Node, selectors: list):
         _text = node_attributes.get("text")
         required = node_attributes.get("required")
 
+        # Required attribute is one that appears on all listings. If not required, then the attribute is optional.
         if required:
             matched = node.css_first(selector)
 
@@ -28,6 +30,8 @@ def parse_raw_attributes(node: Node, selectors: list):
             elif matched and not _text:
                 parsed_attrs[name] = matched.attributes.get("src")
 
+            # Site organizes divs using two different selectors. As such, this is in case the first selector can't be
+            # found.
             elif not matched and secondary_selector:
                 matched = node.css_first(secondary_selector)
                 if matched:

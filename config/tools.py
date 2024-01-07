@@ -2,7 +2,7 @@ import json
 
 configurations = {
     "URL": 'https://www.corcoran.com/search/for-rent/location/new-york-ny-c900008/regionId/1?sortBy=listedDate%2Bdesc',
-
+    "Pages": 10,
     # "Text" attribute indicates whether HTML text can be accessed directly. If false, the item is a node, and the text
     # is nested within another element. If true, text can be immediately accessed.
 

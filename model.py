@@ -2,16 +2,19 @@ import pandas as pd
 import csv
 import matplotlib.pyplot as plt
 
-# def find_avg_for_location():
-if __name__ == '__main__':
-    with open("2023_09_15_extract.csv") as csv_file:
+
+def model(raw_data):
+    """Models and standardizes data into averages by neighborhood"""
+    with open(raw_data) as csv_file:
         df = pd.read_csv(csv_file)
         df = df.sort_values(by=['type'])
 
         avg_dict = {row['location']: [] for index, row in df.loc[:, ['location']].iterrows()}
 
+        # Data is being added, and this object is then converted to pdf format.
         for index, row in df.loc[:, ['location', 'price']].iterrows():
-            if row['price'].isdigit():
+            price = str(row['price'])
+            if price.isdigit():
                 avg_dict[row['location']].append(int(row['price']))
 
         for key in avg_dict:
@@ -21,7 +24,7 @@ if __name__ == '__main__':
         keys = list(avg_dict.keys())
         values = list(avg_dict.values())
         df_dict = {'Location': keys,
-                   'Average Price':  values,
+                   'Average Price': values,
                    }
         avg_df = pd.DataFrame(df_dict)
 
@@ -30,7 +33,3 @@ if __name__ == '__main__':
         plt.savefig('avg_price_rental_properties.pdf')
 
         plt.show()
-
-
-def create_model():
-    return 1

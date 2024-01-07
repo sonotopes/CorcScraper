@@ -1,5 +1,6 @@
 {
       "URL": "https://www.corcoran.com/search/for-rent/location/new-york-ny-c900008/regionId/1?sortBy=listedDate%2Bdesc",
+      "Pages": 3,
       "body_node": {
             "name": "listing_div",
             "selector": "div[class*=\"ListingCard__ListingCardWrapper\"]",
