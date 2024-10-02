@@ -11,9 +11,10 @@ pip3 install -r requirements.txt
 ```
 
 ## Data Visualization using PowerBI. 
-3,000 Listings Approximately 
+
 ![Scraping-4-1](https://github.com/user-attachments/assets/3fc24a8c-140f-4ad7-b7f6-90642824de70)
 
+Report from scraping approximately 4,000 listings in the NYC area. 
 
 ## Explication and Process
 
