@@ -10,8 +10,8 @@ Python must be installed. All libraries from requirements.txt must also be insta
 pip3 install -r requirements.txt
 ```
 
-## Data Visualization using PowerBI from gathering approximately 3,000 listings. 
-
+## Data Visualization using PowerBI. 
+3,000 Listings Approximately 
 ![Scraping-4-1](https://github.com/user-attachments/assets/3fc24a8c-140f-4ad7-b7f6-90642824de70)
 
 
