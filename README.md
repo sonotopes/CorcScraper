@@ -12,6 +12,9 @@ pip3 install -r requirements.txt
 
 ## Data Visualization using PowerBI. 
 
+[Dashboard](https://app.powerbi.com/groups/59250128-3298-4baa-ae98-173027907efd/reports/ade75a10-6ad3-4463-8b70-7d4d9294f436?ctid=ce6d05e1-3c5e-4d62-87a8-4c4a2713c113&pbi_source=linkShare&bookmarkGuid=357999d4-6df9-4e7b-bca2-c4c57ce1197f)
+
+
 ![Scraping-4-1](https://github.com/user-attachments/assets/3fc24a8c-140f-4ad7-b7f6-90642824de70)
 
 Report from scraping approximately 4,000 listings in the NYC area. 
